@@ -10,8 +10,6 @@ function ejecutarTodosLosRetos() {
     // Datos de prueba
     const arregloNumeros = [1, 2, 3, 4, 5];
     const arregloMezclado = [1, 2, 2, 3, 3, 4];
-    const matriz1 = [[1,2], [3,4]];
-    const matriz2 = [[5,6], [7,8]];
     const notas = [15, 18, 12, 14];
     
     // Probar cada reto
@@ -43,15 +41,11 @@ function ejecutarTodosLosRetos() {
         'Texto: JavaScript, Letra: a', 
         contarLetra('JavaScript', 'a'));
 
-    salida += mostrar('Reto 8: Sumar Matrices', 
-        `Matriz1: ${JSON.stringify(matriz1)}\nMatriz2: ${JSON.stringify(matriz2)}`, 
-        JSON.stringify(sumarMatrices(matriz1, matriz2)));
-
-    salida += mostrar('Reto 9: Elementos Únicos', 
+    salida += mostrar('Reto 8: Elementos Únicos', 
         `[${arregloMezclado}]`, 
         `[${obtenerUnicos(arregloMezclado)}]`);
 
-    salida += mostrar('Reto 10: Palíndromo', 
+    salida += mostrar('Reto 9: Palíndromo', 
         'radar', 
         esPalindromo('radar'));
 
